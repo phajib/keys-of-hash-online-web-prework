@@ -1,8 +1,9 @@
 class Hash
   def keys_of(*arguments)
     array = []
+    self.each do |keys, values|
     arguments.each do |data|
-      self.each do |keys, values|
+
         if data == values
           array << keys
         end
